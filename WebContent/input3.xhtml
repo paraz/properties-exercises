@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<f:view locale="#{localeBean.randomLocale}">
+<h:head><title>#{prompts.registrationTitle}</title>
+<link href="./css/styles.css" 
+      rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<h1 class="title">#{prompts.registrationTitle}</h1>
+<h3>#{prompts.registrationText}</h3>
+<h:form>
+#{prompts.firstName}: <h:inputText/><br/>
+#{prompts.lastName}: <h:inputText/><br/>
+#{prompts.emailAddress}: <h:inputText/><br/>
+<h:commandButton value="#{prompts.buttonLabel}" action="nothing"/>
+</h:form>
+</h:body>
+</f:view>
+</html>
